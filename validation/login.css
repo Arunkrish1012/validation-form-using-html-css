@@ -1,0 +1,66 @@
+
+.signup
+{
+	max-width: 550px;
+	border-radius: 20px;
+	margin: auto;
+	background: rgba(0,0,0,0.8);
+	box-sizing:border-box;
+	padding: 30px;
+	color: #fff;
+	margin-top: 100px;
+
+}
+
+	
+h2
+{
+	text-align: center;
+		background-color: #637a91;
+		padding: 20px;
+	
+}
+ input /*[type=text],input[type=password]*/
+{
+	border-bottom: 1px dotted #fff;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 10px 0px;
+	background: rgba(0,0,0,0.10);
+	outline: none;
+	border: none;
+	
+	color: #fff;
+	border-radius: 5px;
+	margin:5px;
+	font-weight: bold;
+
+}
+
+  input[type=submit]
+{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	background:#5fcf80;
+	opacity: 0.7;
+	border-radius: 10px;
+	font-size: 20px;
+	color: white;
+}
+
+  input[type=submit]: hover
+{
+	cursor: pointer;
+ 	background: #ffc107;
+ 	color: yellow;
+}
+
+#submit_btn:hover
+{
+	color:yellow;
+	background-color: :#e67e22;
+}

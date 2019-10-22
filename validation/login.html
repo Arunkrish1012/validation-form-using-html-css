@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Get started today! </title>
+	<link rel="stylesheet" href="login.css">
+	</head>
+	<body>
+			<div class="signup"> 
+				<h2> Get Started today!</h2><br><br>
+				<form name="signin" method="post" onsubmit="return validation()">
+					<p> First Name: <input type="text" id="fname" name="fname" placeholder="First Name">&nbsp Last Name: <input type="text" id="lname" name="lname"  placeholder="Last Name"></p>
+					<p> Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="email" placeholder="Email"> &nbsp  Password:&nbsp&nbsp <input type="password" name="pass"  placeholder="Password" minlength="8"></p>
+					
+					<input type="submit" name="" value="Login" id="submit_btn">
+					<p> You are agreeing to our &nbsp<a href="#" ><font color="blue"> Terms and Services</font></a></p><br>
+
+					<div id="error"></div>
+				</form>
+			</div>
+			
+<script>
+
+function validation()								 
+{ 
+	
+
+	var fn = document.forms["signin"]["fname"];
+	var ln = document.forms["signin"]["lname"];
+	var em = document.forms["signin"]["email"];
+	var ps = document.forms["signin"]["pass"];
+
+if (fn.value == "")								 
+	{ 
+		window.alert("please enter your firstname"); 
+		fn.focus(); 
+		return false; 
+	} 
+
+if (ln.value == "")								 
+	{ 
+		window.alert("please enter your lastname"); 
+		ln.focus(); 
+		return false; 
+	} 
+if (em.value == "")								 
+	{ 
+		window.alert("email address should not be empty"); 
+		em.focus(); 
+		return false; 
+	} 
+
+	if (em.value.indexOf("@", 0) < 0)				 
+	{ 
+		window.alert("Please enter a valid e-mail address(eg: xyx@gmail.com"); 
+		em.focus(); 
+		return false; 
+	} 
+
+	if (em.value.indexOf(".", 0) < 0)				 
+	{ 
+		window.alert("Please enter a valid e-mail address."); 
+		em.focus(); 
+		return false; 
+	} 
+
+if (ps.value == "")								 
+	{ 
+		window.alert("please enter your password"); 
+		ps.focus(); 
+		return false; 
+	} 
+
+return true;
+
+}
+
+	
+</script>
+
+			</body>
+	
+
+	</html>
+
+
+
